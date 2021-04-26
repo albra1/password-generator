@@ -1,0 +1,87 @@
+body {
+    background: rgb(217,174,238);
+    background: linear-gradient(153deg, rgba(217,174,238,1) 0%, rgba(148,217,233,1) 100%);
+    background-attachment: fixed; 
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.title-container{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center; 
+    height: 15vh;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 5em; 
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.content-container{
+    background-color: rgb(255, 255, 255, 0.4);
+    text-align: center; 
+    border-radius: 25px;
+    height: 80vh;
+    padding: 5%;
+}
+
+.btn-grad {
+    background-image: linear-gradient(153deg, rgba(217,174,238,1) 0%, rgba(148,217,233,1) 100%)
+}
+
+.btn-grad {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    background-image: linear-gradient(317deg, rgba(152,104,255,1) 48%, rgba(87,215,245,1) 100%);
+}
+
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+
+.form-check-label{ 
+    font-size: 1em;
+}
+
+.form-check{
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form-check-input{
+    position: absolute;
+}
+
+
+
+
+
