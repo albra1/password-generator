@@ -25,8 +25,8 @@
             </div>
             <div class="col-10">
                 <div class="content-container">
-                    <div class="password-container" id="password">
-                        <p>{{password}}</p>
+                    <div class="password-container">
+                        <p id="password">{{password}}</p>
                     </div>
                     <form action="/" method="POST" id="generate_form" onsubmit="">
                         <input type="range" min="8" max="30" value="15" class="slider" name="length" id="length-range" oninput="change_slider()">
@@ -35,9 +35,19 @@
                                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="special" name="special-chars" checked>
                                 <label class="form-check-label" for="flexSwitchCheckDefault">Include special characters</label>
                             </div>
-                        <button type="submit" id="generate" class="btn-grad">Generate Password</button>
+                        <button type="button" id="generate-btn" class="btn-grad">Generate Password</button>
                     </form>
-                    
+                    <div class="entropy">
+                        <form action="/" method="POST" id="entropy-form" onsubmit="">
+                            <input type="password" class="form-control" name=pass-entropy id="inputPassword" placeholder="Your Password">
+                            <button type="button" id="entropy-btn" class="btn-grad">Check Entropy</button>
+                        </form>
+                        <div class="entropy-container">
+                            <label class="entropy-text">Entropy of your password:</label>
+                            <label class="entropy-text" id="entropy-result">0</label>
+                            <label class="entropy-description">It is recommended to use a password with an entropy of 60 or more bits</label>
+                        </div>
+                    </div>       
                 </div>    
             </div>
             <div class="col col-1">
